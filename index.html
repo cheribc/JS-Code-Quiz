@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,700">
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>JavaScript Coding Quiz</title>
+</head>
+<body>
+    <body>
+        <div class="container">
+            <div class="starting-text" id="starting-text">
+                <h1>Test your JavaScript Knowledge</h1>
+                <div class="wrapper">
+                    <div class="divider div-transparent"></div>
+                </div>
+                <p class="instructions" id="instructions">Answer as many questions as you can before the timer runs out.
+                    <br>Each incorrect answer will subtract 5 seconds from the clock.
+                    <br>Enter your initials to record your score at the end of the quiz.
+                </p>
+            </div>
+    <!-- ----------QUIZ QUESTIONS SECTION-------- -->
+            <div class="quiz" id="quiz">
+                <div>
+                    <button type="button" class="btn" id="start-btn">Start</button>
+                </div>
+    
+                <div class="questions" id="questions">
+                </div>
+    <!-- ---------ANSWER BUTTONS----------- -->
+                <div class="answers" id="answers">
+                    <button type="button" class="answer-button btn" id="answer1">
+                        </button>
+                    <button type="button" class="answer-button btn" id="answer2">
+                        </button>
+                    <button type="button" class="answer-button btn" id="answer3">
+                        </button>
+                    <button type="button" class="answer-button btn" id="answer4">
+                        </button>
+                </div>
+    <!-- ----------FEEDBACK FOR USER'S PERFORMANCE ON CORRECT/INCORRECT ANSWERS AND REMAINING TIME -->
+                <div class="feedback" id="feedback">
+                </div>
+    
+                <div class="timer" id="timer-display">
+    
+                </div>
+                <!-- INPUT FIELD FOR USER TO ENTER INITIALS TO POST THEIR SCORE -->
+                <div class="initials" id="initials">
+                    <input type="text" id="myText" placeholder="Type your Initials Here!">
+                    <button class="btn" type="button" id="submitScore">Submit Your Score!</button>
+                </div>
+                <!-- LIST OF SCORES -->
+                    <div class="scores" id="scores">
+                </div>
+            </div>
+        </div>
+            <script type="text/javascript" src="script.js">
+        </script>
+    </body>
+</html>   
+
+
+

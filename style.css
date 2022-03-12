@@ -1,0 +1,153 @@
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Style for Divider */
+
+.wrapper {
+    padding-bottom: 50px;
+}
+
+.divider {
+    position: relative;
+    margin-top: 50px;
+    height: 1px;
+}
+
+.div-transparent:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, rgb(72, 8, 175), transparent);
+}
+
+h1 {
+    font-size: 2.75rem;
+    color: #B6C9FC;
+}
+
+h2,
+h3 {
+    text-align: center;
+    color: rgb(3, 202, 245);
+}
+
+.instructions {
+    font-size: 1.50rem;
+}
+
+input[type=text] {
+    height: 40px;
+    border: 4px solid rgb(2, 0, 36);
+    border-radius: 15px;
+}
+
+input[type=text]:focus {
+    background-color: #00d4ff;
+}
+
+.starting-text {
+    text-align: center;
+}
+
+.quiz {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.questions {
+    font-size: 1.375rem;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.timer {
+    text-align: left;
+    font-size: 1.5625rem;
+}
+
+.feedback {
+    text-align: right;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.scores {
+    font-size: 1.75rem;
+    text-align: justify;
+    padding: 2px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.btn {
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    background-color: rgb(2, 0, 36);
+    border-radius: 25px;
+    box-shadow: rgba(4, 0, 5, 0.1) 0px 1px 6px 0px rgba(4, 0, 5, 0.1) 0px 1px 1px 0px;
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    font-size: 1.375rem;
+    line-height: 22px;
+    margin: 16px 16px 16px 20px;
+    padding: 14px 34px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #00d4ff;
+    color: rgb(2, 0, 36);
+}
+
+.container {
+    height: 100%;
+    background-color: #079cfa;
+}
+
+
+#quiz,
+#start-btn {
+    text-align: center;
+}
+
+/* Buttons hidden at start of quiz  */
+
+#questions {
+    display: none;
+}
+
+#answers {
+    display: none;
+}
+
+#initials {
+    display: none;
+}
+
+@media (max-width: 690px) {
+    .btn {
+        font-size: 1rem;
+        margin: 16px 0px 0px 0px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .btn {
+        font-size: 0.8rem;
+    }
+}
