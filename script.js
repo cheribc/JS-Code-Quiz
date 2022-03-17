@@ -85,7 +85,7 @@ function answerClick(event) {
         document.getElementById('feedback').textContent = "You chose the right answer!";
         playerScore = playerScore + 1;
     } else {
-        document.getElementById('feedback').textContent = "Sorry!! You chose the wrong answer! -5 seconds from timer";
+        document.getElementById('feedback').textContent = "Sorry!! You chose the wrong answer! You lose 5 seconds from your remaining time!";
         remainingTime = remainingTime - 5;
     }
         currentQuestionIndex++;
@@ -113,7 +113,7 @@ function showNextQuestion() {
 
 function endGame() {
     if (timer) {
-        stopTimer(timer);
+        clearInterval(timer);
     }
     // Hide questions, answers and feedback for user's performance
     document.getElementById('questions').style.display = "none";
